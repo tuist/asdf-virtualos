@@ -1,8 +1,6 @@
 <div align="center">
 
-# asdf-tuist [![Build](https://github.com/tuist/asdf-tuist/actions/workflows/build.yml/badge.svg)](https://github.com/tuist/asdf-tuist/actions/workflows/build.yml) [![Lint](https://github.com/tuist/asdf-tuist/actions/workflows/lint.yml/badge.svg)](https://github.com/tuist/asdf-tuist/actions/workflows/lint.yml)
-
-[tuist](https://docs.tuist.io) plugin for the [asdf version manager](https://asdf-vm.com).
+# asdf-macker [![Build](https://github.com/tuist/asdf-macker/actions/workflows/build.yml/badge.svg)](https://github.com/tuist/asdf-macker/actions/workflows/build.yml) [![Lint](https://github.com/tuist/asdf-macker/actions/workflows/lint.yml/badge.svg)](https://github.com/tuist/asdf-macker/actions/workflows/lint.yml)
 
 </div>
 
@@ -15,35 +13,32 @@
 
 # Dependencies
 
-**TODO: adapt this section**
-
-- `bash`, `curl`, `tar`: generic POSIX utilities.
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
+- `bash`, `curl`, `tar`, and [POSIX utilities](https://pubs.opengroup.org/onlinepubs/9699919799/idx/utilities.html).
 
 # Install
 
 Plugin:
 
 ```shell
-asdf plugin add tuist
+asdf plugin add macker
 # or
-asdf plugin add tuist https://github.com/tuist/asdf-tuist.git
+asdf plugin add macker https://github.com/tuist/asdf-macker.git
 ```
 
-tuist:
+macker:
 
 ```shell
 # Show all installable versions
-asdf list-all tuist
+asdf list-all macker
 
 # Install specific version
-asdf install tuist latest
+asdf install macker latest
 
 # Set a version globally (on your ~/.tool-versions file)
-asdf global tuist latest
+asdf global macker latest
 
-# Now tuist commands are available
-tuist --help
+# Now macker commands are available
+macker --help
 ```
 
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
@@ -53,7 +48,7 @@ install & manage versions.
 
 Contributions of any kind welcome! See the [contributing guide](contributing.md).
 
-[Thanks goes to these contributors](https://github.com/tuist/asdf-tuist/graphs/contributors)!
+[Thanks goes to these contributors](https://github.com/tuist/asdf-macker/graphs/contributors)!
 
 # License
 
