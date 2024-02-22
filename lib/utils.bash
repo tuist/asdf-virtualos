@@ -13,6 +13,12 @@ fail() {
 
 curl_opts=(-fsSL)
 
+get_github_token() {
+    security find-internet-password -s "github.com" -w
+}
+
+GITHUB_API_TOKEN=$(get_github_token)
+
 if [ -n "${GITHUB_API_TOKEN:-}" ]; then
 	curl_opts=("${curl_opts[@]}" -H "Authorization: token $GITHUB_API_TOKEN")
 fi
