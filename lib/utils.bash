@@ -14,7 +14,7 @@ fail() {
 curl_opts=(-fsSL)
 
 get_github_token() {
-    GITHUB_API_TOKEN=$(security find-internet-password -s "github.com" -w 2>/dev/null)
+	GITHUB_API_TOKEN=$(security find-internet-password -s "github.com" -w 2>/dev/null)
 	echo "$GITHUB_API_TOKEN"
 }
 
